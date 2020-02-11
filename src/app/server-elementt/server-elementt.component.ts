@@ -6,8 +6,12 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./server-elementt.component.css']
 })
 export class ServerElementtComponent implements OnInit {
-//@input to help parent component access child element's element 
-  @Input() element: {type: string, name: string, content:string };
+//@input to help parent component access child element's element
+//binding to custom prop , binding our own prop with @input decorator 
+
+
+
+  @Input('srvElement') element: {type: string, name: string, content:string };
 
   constructor() { }
 
