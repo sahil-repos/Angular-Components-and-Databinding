@@ -10,7 +10,7 @@ export class ServerElementtComponent implements OnInit {
 //binding to custom prop , binding our own prop with @input decorator 
 
 
-
+//alias : to target other prop/name (here srvElement) , use the target  in @input() decorator, 
   @Input('srvElement') element: {type: string, name: string, content:string };
 
   constructor() { }
