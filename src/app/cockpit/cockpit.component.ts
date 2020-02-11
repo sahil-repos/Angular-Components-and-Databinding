@@ -8,7 +8,7 @@ import { Component, OnInit,EventEmitter, Output } from '@angular/core';
 export class CockpitComponent implements OnInit {
   //generric type event emmitter <>, allows you to emmit your own event
   @Output()serverCreated = new EventEmitter<{serverName:string, serverContent:string }>();
- @Output() blueprintCreated = new EventEmitter<{serverName:string, serverContent:string }>();
+ @Output('bpCreated') blueprintCreated = new EventEmitter<{serverName:string, serverContent:string }>();
   //we added @input to make a property bindable from outside
   //now we need dot add something to serverCreated 
   //and blueprintcreated to make it kind of listen it from outside
