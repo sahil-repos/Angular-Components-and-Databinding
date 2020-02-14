@@ -4,7 +4,7 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
   selector: 'app-server-elementt',
   templateUrl: './server-elementt.component.html',
   styleUrls: ['./server-elementt.component.css'],
-  encapsulation: ViewEncapsulation.Emulated
+  encapsulation: ViewEncapsulation.Emulated,
 })
 export class ServerElementtComponent implements OnInit {
 //@input to help parent component access child element's element
