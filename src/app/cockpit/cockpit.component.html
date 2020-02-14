@@ -11,7 +11,12 @@
          #serverNameInput>
 
       <label>Server Content</label>
-      <input type="text" class="form-control" [(ngModel)]="newServerContent">
+      <!-- <input type="text" class="form-control" [(ngModel)]="newServerContent"> -->
+      <input 
+      type="text" 
+      class="form-control"
+      #serverContentInput>
+
       <br>
       <!-- pass ref as arg to onAddserver() /passsing ref to rtypescript code -->
       <button
