@@ -14,7 +14,7 @@ export class CockpitComponent implements OnInit {
   //and blueprintcreated to make it kind of listen it from outside
   // and thats output -> we passing our event out of the componenet
   
-  newServerName = '';
+  //newServerName = '';
   newServerContent = '';
   
   constructor() { }
@@ -23,17 +23,23 @@ export class CockpitComponent implements OnInit {
     
   }
 
-  onAddServer() {
+  onAddServer(nameInput: HTMLInputElement) {
+    console.log(nameInput);
+    console.log(nameInput.value);
+
   this.serverCreated.emit
   ({
-    serverName:this.newServerName,
+    // serverName:this.newServerName,
+    serverName:nameInput.value,
+
     serverContent:this.newServerContent
   })
   }
 
-  onAddBlueprint() {
+  onAddBlueprint(nameInput:HTMLInputElement) {
     this.blueprintCreated.emit({
-      serverName:this.newServerName,
+      // serverName:this.newServerName,
+      serverName:nameInput.value,
       serverContent:this.newServerContent
        })
 
